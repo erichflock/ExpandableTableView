@@ -28,12 +28,12 @@ class ViewController: UIViewController {
         titleLabel.text  = "Expandable TableView With Customized Cells And ScrollView"
         
         // Create the data that willbe displayed in the sections and rows
-        let tableViewData1 = TableViewData(isExpandable: false, sectionTitle: "First Section", rowTitle: "First Row")
-        let tableViewData2 = TableViewData(isExpandable: false, sectionTitle: "Second Section", rowTitle: "Second Row")
-        let tableViewData3 = TableViewData(isExpandable: false, sectionTitle: "Third Section", rowTitle: "Third Row")
-        let tableViewData4 = TableViewData(isExpandable: false, sectionTitle: "Fourth Section", rowTitle: "Fourth Row")
-        let tableViewData5 = TableViewData(isExpandable: false, sectionTitle: "Fifth Section", rowTitle: "Fifth Row")
-        let tableViewData6 = TableViewData(isExpandable: false, sectionTitle: "Sixth Section", rowTitle: "Sixth Row")
+        let tableViewData1 = TableViewData(isExpandable: false, sectionTitle: "First Section", rowTitle: "First Section's Row")
+        let tableViewData2 = TableViewData(isExpandable: false, sectionTitle: "Second Section", rowTitle: "Second Section's Row")
+        let tableViewData3 = TableViewData(isExpandable: false, sectionTitle: "Third Section", rowTitle: "Third Section's Row")
+        let tableViewData4 = TableViewData(isExpandable: false, sectionTitle: "Fourth Section", rowTitle: "Fourth Section's Row")
+        let tableViewData5 = TableViewData(isExpandable: false, sectionTitle: "Fifth Section", rowTitle: "Fifth Section's Row")
+        let tableViewData6 = TableViewData(isExpandable: false, sectionTitle: "Sixth Section", rowTitle: "Sixth Section's Row")
     
         tableViewDatas.append(contentsOf: [tableViewData1, tableViewData2, tableViewData3, tableViewData4, tableViewData5, tableViewData6])
         
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: "SectionInRowTableViewCell", bundle: nil), forCellReuseIdentifier: "SectionInRowTableViewCell")
     }
     
-    /// check how many sections are opened. It is used to calculate the correct table view height. 
+    /// check how many sections are opened. It is used to calculate the correct table view height.
     
     func getNumberOfSectionsOpened() -> Int {
         
